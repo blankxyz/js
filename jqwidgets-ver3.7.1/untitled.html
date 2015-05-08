@@ -1,0 +1,144 @@
+<html>
+<title></title>
+<head>
+<style>
+.button2 {
+  -moz-box-shadow:inset 0px 0px 0px -8px #ffffff;
+  -webkit-box-shadow:inset 0px 0px 0px -8px #ffffff;
+  box-shadow:inset 0px 0px 0px -8px #ffffff;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #b0b0b0), color-stop(1, #dfdfdf) );
+  background:-moz-linear-gradient( center top, #b0b0b0 5%, #dfdfdf 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b0b0b0', endColorstr='#dfdfdf');
+  background-color:#b0b0b0;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  border:1px solid #dcdcdc;
+  display:inline-block;
+  color:#3b3b3b;
+  font-family:Arial;
+  font-size:14px;
+  font-weight:bold;
+  padding:3px 15px;
+  text-decoration:none;
+  text-shadow:1px 1px 0px #bab3ba;
+}.button2:hover {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #b0b0b0) );
+  background:-moz-linear-gradient( center top, #dfdfdf 5%, #b0b0b0 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#b0b0b0');
+  background-color:#dfdfdf;
+}.button2:active {
+  position:relative;
+  top:1px;
+}
+</style>
+
+    <link rel="stylesheet" href="./jqwidgets/styles/jqx.base.css" type="text/css" />
+        <link rel="stylesheet" href="./jqwidgets/styles/jqx.energyblue.css" type="text/css" />
+    <script type="text/javascript" src="./scripts/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="./jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="./jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="./jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="./jqwidgets/jqxmenu.js"></script>
+    <script type="text/javascript" src="./jqwidgets/jqxcheckbox.js"></script>
+    <script type="text/javascript" src="./jqwidgets/jqxgrid.js"></script>
+    <script type="text/javascript" src="./jqwidgets/jqxgrid.selection.js"></script> 
+    <script type="text/javascript" src="./jqwidgets/jqxgrid.edit.js"></script> 
+    <script type="text/javascript" src="./jqwidgets/jqxgrid.columnsresize.js"></script> 
+    <script type="text/javascript" src="./jqwidgets/jqxdata.js"></script> 
+    <script type="text/javascript" src="./scripts/gettheme.js"></script>
+    <script type="text/javascript" src="./jqwidgets/jqxpanel.js"></script>
+    <script type="text/javascript" src="./jqwidgets/jqxgrid.pager.js"></script>
+    <script type="text/javascript" src="./jqwidgets/jqxgrid.filter.js"></script>
+    <script type="text/javascript" src="./jqwidgets/jqxlistbox.js"></script>
+    <script type="text/javascript" src="./jqwidgets/jqxdropdownlist.js"></script>
+    <script type="text/javascript" src="./jqwidgets/jqxgrid.sort.js"></script> 
+
+    <script type="text/javascript">
+  
+  
+     $(document).ready(function () {
+      var theme = 'energyblue'
+            var data = '[{ "CompanyName": "Alfreds Futterkiste", "ContactName": "Maria Anders", "ContactTitle": "Sales Representative", "Address": "Obere Str. 57", "City": "Berlin", "Country": "Germany" }, { "CompanyName": "Ana Trujillo Emparedados y helados", "ContactName": "Ana Trujillo", "ContactTitle": "Owner", "Address": "Avda. de la Constitucin 2222", "City": "Mxico D.F.", "Country": "Mexico" }, { "CompanyName": "Antonio Moreno Taquera", "ContactName": "Antonio Moreno", "ContactTitle": "Owner", "Address": "Mataderos 2312", "City": "Mxico D.F.", "Country": "Mexico" }, { "CompanyName": "Around the Horn", "ContactName": "Thomas Hardy", "ContactTitle": "Sales Representative", "Address": "120 Hanover Sq.", "City": "London", "Country": "UK" }, { "CompanyName": "Berglunds snabbkp", "ContactName": "Christina Berglund", "ContactTitle": "Order Administrator", "Address": "Berguvsvgen 8", "City": "Lule", "Country": "Sweden" }, { "CompanyName": "Blauer See Delikatessen", "ContactName": "Hanna Moos", "ContactTitle": "Sales Representative", "Address": "Forsterstr. 57", "City": "Mannheim", "Country": "Germany" }, { "CompanyName": "Blondesddsl pre et fils", "ContactName": "Frdrique Citeaux", "ContactTitle": "Marketing Manager", "Address": "24, place Klber", "City": "Strasbourg", "Country": "France" }, { "CompanyName": "Blido Comidas preparadas", "ContactName": "Martn Sommer", "ContactTitle": "Owner", "Address": "C\/ Araquil, 67", "City": "Madrid", "Country": "Spain" }, { "CompanyName": "Bon app\'", "ContactName": "Laurence Lebihan", "ContactTitle": "Owner", "Address": "12, rue des Bouchers", "City": "Marseille", "Country": "France" }, { "CompanyName": "Bottom-Dollar Markets", "ContactName": "Elizabeth Lincoln", "ContactTitle": "Accounting Manager", "Address": "23 Tsawassen Blvd.", "City": "Tsawassen", "Country": "Canada" }, { "CompanyName": "B\'s Beverages", "ContactName": "Victoria Ashworth", "ContactTitle": "Sales Representative", "Address": "Fauntleroy Circus", "City": "London", "Country": "UK" }, { "CompanyName": "Cactus Comidas para llevar", "ContactName": "Patricio Simpson", "ContactTitle": "Sales Agent", "Address": "Cerrito 333", "City": "Buenos Aires", "Country": "Argentina" }, { "CompanyName": "Centro comercial Moctezuma", "ContactName": "Francisco Chang", "ContactTitle": "Marketing Manager", "Address": "Sierras de Granada 9993", "City": "Mxico D.F.", "Country": "Mexico" }, { "CompanyName": "Chop-suey Chinese", "ContactName": "Yang Wang", "ContactTitle": "Owner", "Address": "Hauptstr. 29", "City": "Bern", "Country": "Switzerland" }, { "CompanyName": "Comrcio Mineiro", "ContactName": "Pedro Afonso", "ContactTitle": "Sales Associate", "Address": "Av. dos Lusadas, 23", "City": "Sao Paulo", "Country": "Brazil" }, { "CompanyName": "Consolidated Holdings", "ContactName": "Elizabeth Brown", "ContactTitle": "Sales Representative", "Address": "Berkeley Gardens 12 Brewery", "City": "London", "Country": "UK" }, { "CompanyName": "Drachenblut Delikatessen", "ContactName": "Sven Ottlieb", "ContactTitle": "Order Administrator", "Address": "Walserweg 21", "City": "Aachen", "Country": "Germany" }, { "CompanyName": "Du monde entier", "ContactName": "Janine Labrune", "ContactTitle": "Owner", "Address": "67, rue des Cinquante Otages", "City": "Nantes", "Country": "France" }, { "CompanyName": "Eastern Connection", "ContactName": "Ann Devon", "ContactTitle": "Sales Agent", "Address": "35 King George", "City": "London", "Country": "UK" }, { "CompanyName": "Ernst Handel", "ContactName": "Roland Mendel", "ContactTitle": "Sales Manager", "Address": "Kirchgasse 6", "City": "Graz", "Country": "Austria"}]';
+
+            // prepare the data
+            var source =
+            {
+                datatype: "json",
+                datafields: [
+                    { name: 'CompanyName', type: 'string' },
+                    { name: 'ContactName', type: 'string' },
+                    { name: 'ContactTitle', type: 'string' },
+                    { name: 'Address', type: 'string' },
+                    { name: 'City', type: 'string' },
+                    { name: 'Country', type: 'string' }
+                ],
+                localdata: data
+            };
+            var dataAdapter = new $.jqx.dataAdapter(source);
+
+            $("#jqxgrid").jqxGrid(
+            {
+                 selectionmode: 'checkbox',
+                width: 850,
+                source: dataAdapter,
+                columnsresize: true,
+                columns: [
+                    { text: 'Company Name', datafield: 'CompanyName', width: 250 },
+                    { text: 'Contact Name', datafield: 'ContactName', width: 150 },
+                    { text: 'Contact Title', datafield: 'ContactTitle', width: 180 },
+                    { text: 'City', datafield: 'City', width: 120 },
+                    { text: 'Country', datafield: 'Country'}
+                ]
+            });
+
+ $("#jqxgrid").bind('cellendedit', function (event) {
+                if (event.args.value) {
+                    $("#jqxgrid").jqxGrid('selectrow', event.args.rowindex);
+                }
+                else {
+                    $("#jqxgrid").jqxGrid('unselectrow', event.args.rowindex);
+                }
+            });
+      
+$('#jqxgrid').bind('rowselect', function (event){
+                var rows = $("#jqxgrid").jqxGrid('selectedrowindexes');
+                var selectedRecords = new Array();
+        var value = new Array();
+                for (var m = 0; m < rows.length; m++) {
+                    var row = $('#jqxgrid').jqxGrid('getcellvalue', rows[m], "City");
+                    selectedRecords[selectedRecords.length] = row;
+          //var value = $('#jqxgrid').jqxGrid('getcellvalue', row[m], "invoice");
+          
+          
+                }
+        document.getElementById("invoice").value=selectedRecords;
+        document.getElementById("rowcount").value=selectedRecords.length;
+            });     
+          
+    
+});
+function pass()
+{
+  var rows = $("#jqxgrid").jqxGrid('selectedrowindexes');
+  
+  var invoice=document.getElementById("invoice").value;
+for(var i=0;i<=invoice.length;i=i+2)
+{
+  window.open("taxinvoice-pdf.php?invoice="+invoice[i]);
+}
+}
+function goback()
+{
+  document.location.href="taxinvoice.php";
+}
+</script>
+</head>
+<body>
+<div id="apDiv1"></div>
+<br />
+<center><div id="jqxgrid">
+
+</div>
+ <input type="text" id="invoice" name="invoice" />
+</center>
